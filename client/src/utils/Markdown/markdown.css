@@ -1,0 +1,31 @@
+@import url('../../index.css');
+
+.markdown-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--gap-4)
+}
+
+.markdown-content {
+    padding: 10px;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--white-10);
+    backdrop-filter: blur(10px);
+    color: var(--white);
+    border: solid 2px var(--black-20);
+    border-radius: 10px;
+}
+
+@media (min-width:900px) {
+    .markdown-content {
+        width: 80vw;
+        padding: 80px;
+        padding-top: 70px;
+        border-radius: 40px;
+    }
+}

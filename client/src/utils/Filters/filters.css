@@ -1,0 +1,97 @@
+@import url('../../index.css');
+
+.filters-main-container {
+    display: flex;
+    gap: var(--gap-3);
+    min-height: 35px;
+    flex-wrap: wrap-reverse;
+}
+
+.filters-orderby-main {
+    display: flex;
+    gap: var(--gap-2);
+    align-items: center;
+}
+.filters-orderby-inputs {
+    display: flex;
+    gap: 0;
+}
+
+.sort-icon-container, .typeof-icon-container {
+    height: 35px;
+    min-width: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s var(--main-animation);
+}
+.sort-icon-container {
+    background: var(--white-30);
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+.sort-icon-container:hover {
+    background: var(--white-20);
+}
+.typeof-icon-container:hover, .filters-search-input:hover {
+    background: var(--white-30) !important;
+}
+.sort-icon-container:active > .icon-feedback-wrapper {
+    scale: .95;
+}
+.typeof-icon-container:active > .icon-feedback-wrapper {
+    scale: .95;
+}
+
+.filters-typeof-container {
+    height: 35px;
+    width: calc(35px * 2);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+}
+
+.icon-feedback-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters-search-container {
+    position: relative;
+    height: 35px;
+    width: 100%;
+}
+.filters-search-input {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: var(--white-20);
+    transition: background .3s var(--main-animation);
+    border-radius: var(--radius);
+    color: var(--white);
+    padding-left: 15px;
+    padding-right: calc(10px + 22px + 15px);
+    font-size: 16px;
+}
+.icon-search-wrapper {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+@media (min-width:900px) {
+    .filters-search-input {
+        width: 250px;
+    }
+    .filters-search-container {
+        width: auto;
+    }
+}

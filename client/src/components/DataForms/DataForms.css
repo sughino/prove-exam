@@ -1,0 +1,46 @@
+@import url('../../index.css');
+.form-container {
+    width: 100vw; 
+    background: var(--black);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-3);
+    height: 100dvh;
+    overflow-y: scroll;
+}
+
+.inner-form-container-split {
+    width: 100%;
+}
+.inner-form-container-flex {
+    display: flex;
+    gap: var(--gap);
+}
+.inner-form-container-flex.row {
+    flex-direction: row;
+}
+.inner-form-container-flex.col {
+    flex-direction: column;
+}
+.inner-form-container-flex.space {
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (min-width:800px) {
+    .form-container {
+        width: 700px; 
+    }
+}
+@media (min-width:600px) {
+    .form-container {
+        height: auto;
+        overflow: hidden;
+        border-radius: 30px;
+        border: solid 2px var(--white-10);
+    }
+    .inner-form-container-split {
+        width: 50%;
+    }
+}

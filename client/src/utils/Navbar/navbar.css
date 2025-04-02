@@ -1,0 +1,60 @@
+@import url('../../index.css');
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    background: var(--white-10);
+    backdrop-filter: blur(10px);
+    user-select: none;
+}
+
+.navbar-content-container {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    opacity: .5;
+    border-radius: 0;
+    cursor: pointer;
+    border: none;
+}
+.navbar-content-container.active {
+    opacity: 1;
+}
+.navbar-content-container:active > .navbar-content {
+    scale: .95;
+}
+
+.navbar-content  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-direction: column;
+}
+
+@media (min-width:900px) {
+    nav {
+        background: none;
+        backdrop-filter: blur(0px);
+        gap: var(--gap-2);
+        padding-inline: 20px;
+    }
+
+    .navbar-content-container {
+        padding: 10px 20px 10px 20px;
+        background: var(--white-10);
+        backdrop-filter: blur(10px);
+        border: solid 2px var(--black-20);
+        border-radius: 10px;
+    }
+
+    .navbar-content  {
+        flex-direction: row;
+        gap: var(--gap);
+    }  
+}

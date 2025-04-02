@@ -1,0 +1,61 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]
+
+## [Version 1.1] - 30-01-2024
+
+*First version of programm
+- Install libraries
+    (npm install @mui/material @emotion/react @emotion/styled styled-components)
+    (npm install @react-spring/web)
+    (npm install react-markdown remark-gfm)
+    (npm install lucide-react)
+    (npm install ogl)
+    (npm install framer-motion)
+    (npm install react-haiku)
+    (npm install axios)
+    (npm install swr)
+    (npm install react-router-dom)
+    (npm install yup)
+    (npm install formik)
+    (npm install ldrs)
+- Install back-end libraries
+    (npm install express cors dotenv)
+    (npm install nodemon --save-dev)
+    (npm install mongodb)
+    (npm install csv-parser)
+
+- Creation hero page
+
+
+## [Version 2.1] - 03-02-2024
+
+### Fixed
+
+- Menu graphics
+- Some options
+
+
+## [Version 2.2] - 04-02-2024
+
+### Fixed
+
+- Programm functions
+
+### Added
+
+- User input
+- Help option
+
+
+## [Relaesed]
+
+## [Version 2.3] - 05-02-2024
+
+### Added
+
+- Credits
+- Documentation
+- Tag name

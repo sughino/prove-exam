@@ -1,0 +1,33 @@
+// Collection "students"
+{
+  "_id": ObjectId(),
+  "serialNumber": Number,
+  "name": String,
+  "surname": String,
+  "address": String,
+  "city": String,
+  "province": String,
+  "zip": Number,
+  "email": String
+}
+
+// Collection "courses"
+{
+  "_id": ObjectId(),
+  "courseId": Number,
+  "name": String,
+  "abstract": String,
+  "teacher": String,
+  "plannedHours": Number
+}
+
+// Collection "exams"
+{
+  "_id": ObjectId(),
+  "examId": Number,
+  "courseId": Number,
+  "serialNumber": Number,
+  "examDate": Date,
+  "vote": Number,
+  "praise": Boolean
+}

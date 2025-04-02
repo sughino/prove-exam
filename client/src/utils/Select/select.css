@@ -1,0 +1,64 @@
+@import url('../../index.css');
+
+.main-select-container {
+    width: max-content;
+    height: 35px;
+    position: relative;
+    user-select: none;
+}
+@media (min-width:600px) {
+    .main-select-container {
+        width: 120px;
+    }
+}
+
+.select-container-input {
+    width: 100%;
+    height: 100%;
+    background: var(--white-20);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    gap: var(--gap);
+    cursor: pointer;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    transition: all .3s var(--main-animation);
+}
+.select-container-input:hover {
+    background: var(--white-30);
+}
+
+.select-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-menu-container {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    height: fit-content;
+    width: 100%;
+    background: var(--white-20);
+    border-radius: var(--radius);
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+.select-menu-children {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s var(--main-animation);
+}
+.select-menu-children.disabled {
+    opacity: .4;
+}
+.select-menu-children:hover {
+    background: var(--white-30);
+}
+.select-menu-children:active {
+    scale: .95;
+}

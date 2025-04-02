@@ -9,17 +9,17 @@ const filterTextMap = {
   'Surname': 'surname'
 };
 
-/*const getBaseUrl = () => {
+const getBaseUrl = () => {
   const { hostname, protocol } = window.location;
   
   if (hostname === 'localhost') {
     return 'http://localhost:5000/api';
   } else {
-    return `${protocol}//${hostname}:5000/api`;
+    return 'https://prove-exam-server.vercel.app/api';
   }
 };
-const BASE_URL = getBaseUrl();*/
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = getBaseUrl();
+//const BASE_URL = 'http://localhost:5000/api';
 
 const studentsService = {
 
